@@ -8,9 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           ref: main 
+      - name: Print environment variables
+        run: env
       - name: Create file and commit
         run: |
             COMMIT_FILE="log.md"
@@ -25,4 +27,4 @@ jobs:
             git commit -m ":octocat: Bounty Updated: ${COMMIT_COUNTER}"
             git push origin main
         env:
-            GITHUB_TOKEN: ${{ secrets.COMMIT_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
