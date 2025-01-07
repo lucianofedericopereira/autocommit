@@ -1,0 +1,28 @@
+name: Autocommit (daily)
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main 
+      - name: Create file and commit
+        run: |
+            COMMIT_FILE="log.md"
+            COMMIT_GREET="Hi, my name is ~~Guybrush Threepwood~~ Luciano Federico Pereira, and I am a ~~wannabe pirate~~ programmer.\nA short song: "
+            COMMIT_SONG=" bounty of doubloons gleams in the sun, a treasure hunt has just begun! Arrr!"
+            COMMIT_COUNTER=$(grep -oP "\d+(?=${COMMIT_SONG})" "$COMMIT_FILE" || echo 0)
+            COMMIT_COUNTER=$((COMMIT_COUNTER + 1))
+            echo "${COMMIT_GREET}${COMMIT_COUNTER}${COMMIT_SONG}" > "$COMMIT_FILE"
+            git config --global user.name "Luciano Federico Pereira"
+            git config --global user.email "lucianopereira@posteo.es"
+            git add "$COMMIT_FILE"
+            git commit -m ":octocat: Bounty Updated: ${COMMIT_COUNTER}"
+            git push https://x-access-token:${{ secrets.COMMIT_TOKEN }}@github.com/lucianofedericopereira/autocommit.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.COMMIT_TOKEN }}
