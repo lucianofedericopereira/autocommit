@@ -23,6 +23,6 @@ jobs:
             git config --global user.email "lucianopereira@posteo.es"
             git add "$COMMIT_FILE"
             git commit -m ":octocat: Bounty Updated: ${COMMIT_COUNTER}"
-            git push https://x-access-token:${{ secrets.COMMIT_TOKEN }}@github.com/lucianofedericopereira/autocommit.git
+            git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.COMMIT_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.COMMIT_TOKEN }}
