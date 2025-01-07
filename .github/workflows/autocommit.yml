@@ -13,8 +13,8 @@ jobs:
           ref: main 
       - name: Create file and commit
         run: |
-            COMMIT_FILE="log.md"
-            COMMIT_GREET="Hi, my name is ~~Guybrush Threepwood~~ *Luciano Federico Pereira*, and I am a ~~wannabe pirate~~ *programmer*.<br>A short song: "
+            COMMIT_FILE="hello.md"
+            COMMIT_GREET="Hi, my name is ~~Guybrush Threepwood~~ **Luciano Federico Pereira**, and I am a ~~wannabe pirate~~ **programmer**.<br>A short song: "
             COMMIT_SONG=" bounty of doubloons gleams in the sun, a treasure hunt has just begun! Arrr!"
             COMMIT_COUNTER=$(grep -oP "\d+(?=${COMMIT_SONG})" "$COMMIT_FILE" || echo 0)
             COMMIT_COUNTER=$((COMMIT_COUNTER + 1))
