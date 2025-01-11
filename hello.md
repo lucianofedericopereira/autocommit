@@ -1,1 +1,1 @@
-Hi, my name is ~~Guybrush Threepwood~~ **Luciano Federico Pereira**, and I am a ~~wannabe pirate~~ **programmer**.<br>A short song: 5 bounty of doubloons gleams in the sun, a treasure hunt has just begun! Arrr!
+Hi, my name is ~~Guybrush Threepwood~~ **Luciano Federico Pereira**, and I am a ~~wannabe pirate~~ **programmer**.<br>A short song: 6 bounty of doubloons gleams in the sun, a treasure hunt has just begun! Arrr!
