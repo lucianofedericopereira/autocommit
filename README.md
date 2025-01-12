@@ -9,7 +9,7 @@
     </a>  
 </p>  
 <p align="center">
-the famous wannabe pirate from the Monkey Island series
+The famous wannabe pirate from the Monkey Island series.
 </p>
 
 ## Table of Contents
