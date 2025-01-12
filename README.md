@@ -1,14 +1,15 @@
 # 🗺️ Auto-Commit: Script for GitHub Actions Learning
 
 <p align="center">
-<figure  align="center">  
+<figure align="center">  
   <img src="/images/guybrush.png?raw=true" alt="Guybrush Ulysses Threepwood">
   <figcaption>
     <a href="https://en.wikipedia.org/wiki/Guybrush_Threepwood">
       Guybrush Ulysses Threepwood
-    </a> - the famous wannabe pirate from the Monkey Island series
+    </a>
   </figcaption>
 </figure>
+the famous wannabe pirate from the Monkey Island series
 </p>
 
 ## Table of Contents
