@@ -29,7 +29,7 @@ The famous wannabe pirate from the Monkey Island series.
 
 ### ⚓ The Objective: **Becoming a Coding Captain**
 
-The goal isn't to artificially inflate **"GitHub green boxes"** – *those colored indicators of activity*. Instead, it's to give you hands-on experience with 🛠️ **GitHub Actions**. 
+The goal isn't to artificially inflate **"GitHub green boxes"** – *those colored indicators of activity*. Instead, it's to give you hands-on experience with 🛠️ **Actions**. 
 
 ### 🏴‍☠️ Don't Be a Sloppy Pirate, Be a Meticulous Programmer 
 
