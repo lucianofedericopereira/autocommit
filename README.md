@@ -39,9 +39,9 @@ Here's more about [GitHub Actions](https://docs.github.com/en/actions) and how t
 
 Inexperienced or bad practice often shows itself in repos that are only committed once in bulk or have meaningless commit messages. We aim to help you recognize and avoid these pitfalls.
 
-Check out the example file 📜[helloWorld.md](helloWorld.md). 
+Check out the example file 📜 [helloWorld.md](helloWorld.md). 
 
-## 🇪🇸 Español 
+## Español 
 
 ### ⚓ El Objetivo: Convertirse en un Capitán de Repositorios.
 
@@ -57,7 +57,7 @@ El nombre *Guybrush Threepwood*? Eso es un guiño al clásico personaje de la se
 
 La falta de experiencia o las malas prácticas a menudo se muestran en repos que solo se comprometen una vez en bloque o tienen mensajes de commit sin sentido. Queremos ayudarte a reconocer y evitar estos problemas.
 
-Revisa el archivo de ejemplo 📜[helloWorld.md](helloWorld.md). 
+Revisa el archivo de ejemplo 📜 [helloWorld.md](helloWorld.md). 
 
 ## 🇮🇹 Italiano 
 
@@ -75,9 +75,9 @@ Perché è rilevante? Perché usare il numero di commit come KPI (Indicatore Chi
 
 La mancanza di esperienza o le cattive pratiche spesso si manifestano in repos che vengono commitati solo una volta in blocco o che hanno messaggi di commit insignificanti. Vogliamo aiutarti a riconoscere e evitare queste insidie.
 
-Controlla il file di esempio 📜[helloWorld.md](helloWorld.md). 
+Controlla il file di esempio 📜 [helloWorld.md](helloWorld.md). 
 
-## 🇩🇪 Deutsch 
+## Deutsch 
 
 ### ⚓ Das Ziel: Ein Programmierkapitän werden 
 
@@ -93,9 +93,9 @@ Warum ist das relevant? Weil die Nutzung der Anzahl der Commits als KPI (Key Per
 
 Unerfahrenheit oder schlechte Praktiken zeigen sich oft in Repos, die nur einmal in der Masse committet werden oder bedeutungslose Commit-Nachrichten haben. Wir möchten dir helfen, diese Stolperfallen zu erkennen und zu vermeiden.
 
-Überprüfen Sie die Beispieldatei 📜[helloWorld.md](helloWorld.md). 
+Überprüfen Sie die Beispieldatei 📜 [helloWorld.md](helloWorld.md). 
 
-## 🇫🇷 Français 
+## Français 
 
 ### ⚓ L'Objectif : Devenir un Capitaine de la Programmation 
 
@@ -111,9 +111,9 @@ Pourquoi est-ce pertinent ? Parce qu'utiliser le nombre de commits comme KPI (In
 
 L'inexpérience ou les mauvaises pratiques se manifestent souvent dans des dépôts qui sont seulement commités en bloc ou qui ont des messages de commit insignifiants. Nous visons à vous aider à reconnaître et éviter ces pièges.
 
-Consultez le fichier d'exemple 📜[helloWorld.md](helloWorld.md).
+Consultez le fichier d'exemple 📜 [helloWorld.md](helloWorld.md).
 
-- 🛠️ GitHub Action
+- Action
 
 ```yaml
 name: Autocommit (daily)
