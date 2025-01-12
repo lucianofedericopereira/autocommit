@@ -14,7 +14,16 @@
 The famous wannabe pirate from the Monkey Island series.
 </p>
 
-### 🇬🇧 [English](#english) - 🇪🇸 [Español](#español) - 🇮🇹 [Italiano](#italiano) - 🇩🇪 [Deutsch](#deutsch) - 🇫🇷 [Français](#français) - 🛠️ [GitHub Action](#action)
+<h3 align="center">
+  <a href="#english">🇬🇧 English</a>
+  <a href="#español">🇪🇸 Español</a>
+  <a href="#italiano">🇮🇹 Italiano</a>
+  <a href="#deutsch">🇩🇪 Deutsch</a>
+  <a href="#français">🇫🇷 Français</a>
+  <a href="#action">🛠️ GitHub Action</a>
+
+</h3>
+
 
 ## English 
 
