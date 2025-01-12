@@ -20,7 +20,7 @@ The famous wannabe pirate from the Monkey Island series.
   <a href="#italiano">🇮🇹 Italiano</a>
   <a href="#deutsch">🇩🇪 Deutsch</a>
   <a href="#français">🇫🇷 Français</a>
-  <a href="#action">🛠️ GitHub Action</a>
+  <a href="#action">🛠️ Action</a>
 
 </h3>
 
@@ -29,7 +29,7 @@ The famous wannabe pirate from the Monkey Island series.
 
 ### ⚓ The Objective: **Becoming a Coding Captain**
 
-The goal isn't to artificially inflate **"GitHub green boxes"** – *those colored indicators of activity*. Instead, it's to give you hands-on experience with 🛠️ **Actions**. 
+The goal isn't to artificially inflate **"GitHub green boxes"** – *those colored indicators of activity*. Instead, it's to give you hands-on experience with 🛠️ **GitHub Actions**. 
 
 ### 🏴‍☠️ Don't Be a Sloppy Pirate, Be a Meticulous Programmer 
 
