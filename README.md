@@ -3,5 +3,7 @@
 ## A Daily auto commit action
 
 <p align="center">
-![Guybrush Ulysses Threepwood](images/guybrush.png?raw=true)
+![Guybrush Ulysses Threepwood](/images/guybrush.png?raw=true)
 </p>
+
+<img src="/images/guybrush.png?raw=trueg" alt="Guybrush Ulysses Threepwood">
