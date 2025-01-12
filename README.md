@@ -4,5 +4,6 @@
 
 <p align="center"><img src="/images/guybrush.png?raw=true" alt="Guybrush Ulysses Threepwood"></p>
 
-
+<p align="center">
 ![Guybrush Ulysses Threepwood](/images/guybrush.png?raw=true)
+</p>
