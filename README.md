@@ -1,5 +1,40 @@
 # 🗺️ Auto-Commit: Script for GitHub Actions Learning
 
+```yaml
+name: Autocommit (daily)
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: main 
+      - name: Create file and commit
+        run: |
+            COMMIT_NAME="Luciano Federico Pereira"
+            COMMIT_EMAIL="lucianopereira [at] posteo.es"
+            COMMIT_FILE="helloWorld.md"
+            COMMIT_GREET="Hi, my name is ~~Guybrush Threepwood~~ **${COMMIT_NAME}**, and I am a ~~wannabe pirate~~ **programmer**.<br><br>A short song: "
+            COMMIT_SONG=" bounty of doubloons gleams in the sun, a treasure hunt has just begun! Arrr!"
+            COMMIT_COUNTER=$(grep -oP "\d+(?=${COMMIT_SONG})" "$COMMIT_FILE" || echo 0)
+            COMMIT_COUNTER=$((COMMIT_COUNTER + 1))
+            echo "${COMMIT_GREET}${COMMIT_COUNTER}${COMMIT_SONG}" > "$COMMIT_FILE"
+            git config --global user.name "${COMMIT_NAME}"
+            git config --global user.email "${COMMIT_EMAIL}"
+            git add "$COMMIT_FILE"
+            git commit -m ":octocat: Bounty Updated: ${COMMIT_COUNTER}"
+            git push origin main
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+## Table of Contents
+
 <p align="center">
   <img src="/images/guybrush.png?raw=true" alt="Guybrush Ulysses Threepwood">
 </p>
@@ -11,8 +46,6 @@
 <p align="center">
 The famous wannabe pirate from the Monkey Island series.
 </p>
-
-## Table of Contents
 
 1. 🇬🇧 [English](#english) 
 2. 🇪🇸 [Español](#español) 
