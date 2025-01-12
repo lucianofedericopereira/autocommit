@@ -33,7 +33,9 @@ The goal isn't to artificially inflate **"GitHub green boxes"** – *those color
 
 ### 🏴‍☠️ Don't Be a Sloppy Pirate, Be a Meticulous Programmer 
 
-The name *Guybrush Threepwood*? That's a nod to the classic character from the [Monkey Island](https://en.wikipedia.org/wiki/Monkey_Island_(series)) series; he’s a notorious wannabe pirate. And here’s where [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law) comes in: 📉 *"When a measure becomes a target, it ceases to be a good measure."* 
+The name *Guybrush Threepwood*? That's a nod to the classic character from the [Monkey Island](https://en.wikipedia.org/wiki/Monkey_Island_(series)) series; he’s a notorious wannabe pirate. 
+
+And here’s where [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law) comes in: 📉 *"When a measure becomes a target, it ceases to be a good measure."* 
 
 Why is this relevant? Because using the number of commits as a **KPI** (*Key Performance Indicator*) can lead to misleading practices. Commits should represent meaningful updates to code, not just effort to fill up your commit history.
 
