@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="/images/guybrush.png?raw=true" alt="Guybrush Ulysses Threepwood">
-  <figcaption align="center">[Guybrush Ulysses Threepwood](https://en.wikipedia.org/wiki/Guybrush_Threepwood) - the famous wannabe pirate from the Monkey Island series</figcaption>
+  <figcaption align="center"><ah ref="https://en.wikipedia.org/wiki/Guybrush_Threepwood">Guybrush Ulysses Threepwood</a>- the famous wannabe pirate from the Monkey Island series</figcaption>
 </p>
 
 ## Table of Contents
