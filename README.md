@@ -21,7 +21,7 @@ The famous wannabe pirate from the Monkey Island series.
 - 🇫🇷 [Français](#français) 
 - 🛠️ [GitHub Action](#action)
 
-## 🇬🇧 English 
+## English 
 
 ### ⚓ The Objective: **Becoming a Coding Captain**
 
