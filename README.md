@@ -1,6 +1,6 @@
 # 🗺️ Auto-Commit: Script for GitHub Actions Learning
 
-## Table of Contents
+### Table of Contents
 
 <p align="center">
   <img src="/images/guybrush.png?raw=true" alt="Guybrush Ulysses Threepwood">
