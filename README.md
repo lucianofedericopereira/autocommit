@@ -1,4 +1,6 @@
-# 🗺️ Auto-Commit: Script for GitHub Actions Learning
+# 🗺️ 𝓐𝓾𝓽𝓸-𝓒𝓸𝓶𝓶𝓲𝓽 
+
+### Script for GitHub Actions Learning
 
 <p align="center">
   <img src="/images/guybrush.png?raw=true" alt="Guybrush Ulysses Threepwood">
