@@ -1,38 +1,5 @@
 # 🗺️ Auto-Commit: Script for GitHub Actions Learning
 
-```yaml
-name: Autocommit (daily)
-on:
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-jobs:
-  commit:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          ref: main 
-      - name: Create file and commit
-        run: |
-            COMMIT_NAME="Luciano Federico Pereira"
-            COMMIT_EMAIL="lucianopereira [at] posteo.es"
-            COMMIT_FILE="helloWorld.md"
-            COMMIT_GREET="Hi, my name is ~~Guybrush Threepwood~~ **${COMMIT_NAME}**, and I am a ~~wannabe pirate~~ **programmer**.<br><br>A short song: "
-            COMMIT_SONG=" bounty of doubloons gleams in the sun, a treasure hunt has just begun! Arrr!"
-            COMMIT_COUNTER=$(grep -oP "\d+(?=${COMMIT_SONG})" "$COMMIT_FILE" || echo 0)
-            COMMIT_COUNTER=$((COMMIT_COUNTER + 1))
-            echo "${COMMIT_GREET}${COMMIT_COUNTER}${COMMIT_SONG}" > "$COMMIT_FILE"
-            git config --global user.name "${COMMIT_NAME}"
-            git config --global user.email "${COMMIT_EMAIL}"
-            git add "$COMMIT_FILE"
-            git commit -m ":octocat: Bounty Updated: ${COMMIT_COUNTER}"
-            git push origin main
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
 ## Table of Contents
 
 <p align="center">
@@ -47,11 +14,12 @@ jobs:
 The famous wannabe pirate from the Monkey Island series.
 </p>
 
-1. 🇬🇧 [English](#english) 
-2. 🇪🇸 [Español](#español) 
-3. 🇮🇹 [Italiano](#italiano) 
-4. 🇩🇪 [Deutsch](#deutsch) 
-5. 🇫🇷 [Français](#français) 
+- 🇬🇧 [English](#english) 
+- 🇪🇸 [Español](#español) 
+- 🇮🇹 [Italiano](#italiano) 
+- 🇩🇪 [Deutsch](#deutsch) 
+- 🇫🇷 [Français](#français) 
+- 🛠️ [GitHub Action](#action)
 
 ## 🇬🇧 English 
 
@@ -143,4 +111,40 @@ Pourquoi est-ce pertinent ? Parce qu'utiliser le nombre de commits comme KPI (In
 
 L'inexpérience ou les mauvaises pratiques se manifestent souvent dans des dépôts qui sont seulement commités en bloc ou qui ont des messages de commit insignifiants. Nous visons à vous aider à reconnaître et éviter ces pièges.
 
-Consultez le fichier d'exemple 📜[helloWorld.md](helloWorld.md). 
+Consultez le fichier d'exemple 📜[helloWorld.md](helloWorld.md).
+
+- 🛠️ GitHub Action
+
+```yaml
+name: Autocommit (daily)
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: main 
+      - name: Create file and commit
+        run: |
+            COMMIT_NAME="Luciano Federico Pereira"
+            COMMIT_EMAIL="lucianopereira [at] posteo.es"
+            COMMIT_FILE="helloWorld.md"
+            COMMIT_GREET="Hi, my name is ~~Guybrush Threepwood~~ **${COMMIT_NAME}**, and I am a ~~wannabe pirate~~ **programmer**.<br><br>A short song: "
+            COMMIT_SONG=" bounty of doubloons gleams in the sun, a treasure hunt has just begun! Arrr!"
+            COMMIT_COUNTER=$(grep -oP "\d+(?=${COMMIT_SONG})" "$COMMIT_FILE" || echo 0)
+            COMMIT_COUNTER=$((COMMIT_COUNTER + 1))
+            echo "${COMMIT_GREET}${COMMIT_COUNTER}${COMMIT_SONG}" > "$COMMIT_FILE"
+            git config --global user.name "${COMMIT_NAME}"
+            git config --global user.email "${COMMIT_EMAIL}"
+            git add "$COMMIT_FILE"
+            git commit -m ":octocat: Bounty Updated: ${COMMIT_COUNTER}"
+            git push origin main
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
