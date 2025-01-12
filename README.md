@@ -1,7 +1,5 @@
 # 🗺️ Auto-Commit: Script for GitHub Actions Learning
 
-### Table of Contents
-
 <p align="center">
   <img src="/images/guybrush.png?raw=true" alt="Guybrush Ulysses Threepwood">
 </p>
@@ -14,12 +12,7 @@
 The famous wannabe pirate from the Monkey Island series.
 </p>
 
-- 🇬🇧 [English](#english) 
-- 🇪🇸 [Español](#español) 
-- 🇮🇹 [Italiano](#italiano) 
-- 🇩🇪 [Deutsch](#deutsch) 
-- 🇫🇷 [Français](#français) 
-- 🛠️ [GitHub Action](#action)
+### 🇬🇧 [English](#english) - 🇪🇸 [Español](#español) - 🇮🇹 [Italiano](#italiano) - 🇩🇪 [Deutsch](#deutsch) - 🇫🇷 [Français](#français) - 🛠️ [GitHub Action](#action)
 
 ## English 
 
@@ -59,7 +52,7 @@ La falta de experiencia o las malas prácticas a menudo se muestran en repos que
 
 Revisa el archivo de ejemplo 📜 [helloWorld.md](helloWorld.md). 
 
-## 🇮🇹 Italiano 
+## Italiano
 
 ### ⚓ L'Obiettivo: Diventare un Capitano Codificatore 
 
@@ -113,7 +106,7 @@ L'inexpérience ou les mauvaises pratiques se manifestent souvent dans des dép�
 
 Consultez le fichier d'exemple 📜 [helloWorld.md](helloWorld.md).
 
-- Action
+## Action
 
 ```yaml
 name: Autocommit (daily)
