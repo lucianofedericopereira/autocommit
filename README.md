@@ -163,90 +163,106 @@ jobs:
       # DE: Setze den Namen für den Commit
       # FR: Définir le nom pour le commit
       - name: Create file and commit
+
+        #run
+
+        #COMMIT_NAME="Luciano Federico Pereira"
+        # EN: Set email for the commit
+        # ES: Establecer el correo electrónico del commit
+        # IT: Imposta l'email per il commit
+        # DE: Setze die E-Mail für den Commit
+        # FR: Définir l'email pour le commit
+        # COMMIT_EMAIL="lucianopereira [at] posteo.es"
+
+        # EN: File to be created/updated
+        # ES: Archivo a crear/actualizar
+        # IT: File da creare/aggiornare
+        # DE: Zu erstellende/aktualisierende Datei
+        # FR: Fichier à créer / mettre à jour
+        # COMMIT_FILE="helloWorld.md"
+
+        # EN: Greeting message
+        # ES: Mensaje de saludo
+        # IT: Messaggio di saluto
+        # DE: Begrüßungsnachricht
+        # FR: Message de salutation
+        # COMMIT_GREET="Hi, my name is ~~Guybrush Threepwood~~ **${COMMIT_NAME}**, and I am a ~~wannabe pirate~~ **programmer**.<br><br>A short song: "
+
+        # EN: Fixed part of the song
+        # ES: Parte fija de la canción
+        # IT: Parte fissa della canzone
+        # DE: Fester Teil des Liedes
+        # FR: Partie fixe de la chanson
+        # COMMIT_SONG=" bounty of doubloons gleams in the sun, a treasure hunt has just begun! Arrr!"
+
+        # EN: Extract the current counter from the file or set to 0 if not found
+        # ES: Extraer el contador actual del archivo o establecerlo en 0 si no se encuentra
+        # IT: Estrai l'attuale contatore dal file o impostalo su 0 se non trovato
+        # DE: Extrahiere den aktuellen Zähler aus der Datei oder setze ihn auf 0, wenn nicht gefunden
+        # FR: Extraire le compteur actuel du fichier ou le définir à 0 s'il n'est pas trouvé
+        # COMMIT_COUNTER=$(grep -oP "\d+(?=${COMMIT_SONG})" "$COMMIT_FILE" || echo 0)
+
+        # EN: Increment the counter
+        # ES: Incrementar el contador
+        # IT: Incrementa il contatore
+        # DE: Inkrementiere den Zähler
+        # FR: Incrémenter le compteur
+        # COMMIT_COUNTER=$((COMMIT_COUNTER + 1))
+
+        # EN: Write updated content to the file
+        # ES: Escribir el contenido actualizado en el archivo
+        # IT: Scrivi il contenuto aggiornato nel file
+        # DE: Schreibe den aktualisierten Inhalt in die Datei
+        # FR: Écrire le contenu mis à jour dans le fichier
+        # echo "${COMMIT_GREET}${COMMIT_COUNTER}${COMMIT_SONG}" > "$COMMIT_FILE"
+
+        # EN: Configure Git with the commit name
+        # ES: Configurar Git con el nombre del commit
+        # IT: Configura Git con il nome del commit
+        # DE: Konfiguriere Git mit dem Commit-Namen
+        # FR: Configurer Git avec le nom du commit
+        # git config --global user.name "${COMMIT_NAME}"
+
+        # EN: Configure Git with the commit email
+        # ES: Configurar Git con el correo electrónico del commit
+        # IT: Configura Git con l'email del commit
+        # DE: Konfiguriere Git mit der Commit-E-Mail
+        # FR: Configurer Git avec l'email du commit
+        # git config --global user.email "${COMMIT_EMAIL}"
+
+        # EN: Add the file to the staging area
+        # ES: Agregar el archivo al área de preparación
+        # IT: Aggiungi il file all'area di staging
+        # DE: Füge die Datei zur Staging-Area hinzu
+        # FR: Ajouter le fichier à la zone de staging
+        # git add "$COMMIT_FILE"
+
+        # EN: Commit the changes with a custom message
+        # ES: Hacer commit de los cambios con un mensaje personalizado
+        # IT: Effettua il commit delle modifiche con un messaggio personalizzato
+        # DE: Committe die Änderungen mit einer benutzerdefinierten Nachricht
+        # FR: Commitez les modifications avec un message personnalisé
+        # git commit -m ":octocat: Bounty Updated: ${COMMIT_COUNTER}"
+
+        # EN: Push the commit to the main branch
+        # ES: Empujar el commit a la rama principal
+        # IT: Pusha il commit alla branch principale
+        # DE: Pushe den Commit auf die Hauptbranch
+        # FR: Pousser le commit vers la branche principale
+        # git push origin main
         run: |
             COMMIT_NAME="Luciano Federico Pereira"
-            # EN: Set email for the commit
-            # ES: Establecer el correo electrónico del commit
-            # IT: Imposta l'email per il commit
-            # DE: Setze die E-Mail für den Commit
-            # FR: Définir l'email pour le commit
             COMMIT_EMAIL="lucianopereira [at] posteo.es"
-
-            # EN: File to be created/updated
-            # ES: Archivo a crear/actualizar
-            # IT: File da creare/aggiornare
-            # DE: Zu erstellende/aktualisierende Datei
-            # FR: Fichier à créer / mettre à jour
             COMMIT_FILE="helloWorld.md"
-
-            # EN: Greeting message
-            # ES: Mensaje de saludo
-            # IT: Messaggio di saluto
-            # DE: Begrüßungsnachricht
-            # FR: Message de salutation
             COMMIT_GREET="Hi, my name is ~~Guybrush Threepwood~~ **${COMMIT_NAME}**, and I am a ~~wannabe pirate~~ **programmer**.<br><br>A short song: "
-
-            # EN: Fixed part of the song
-            # ES: Parte fija de la canción
-            # IT: Parte fissa della canzone
-            # DE: Fester Teil des Liedes
-            # FR: Partie fixe de la chanson
             COMMIT_SONG=" bounty of doubloons gleams in the sun, a treasure hunt has just begun! Arrr!"
-
-            # EN: Extract the current counter from the file or set to 0 if not found
-            # ES: Extraer el contador actual del archivo o establecerlo en 0 si no se encuentra
-            # IT: Estrai l'attuale contatore dal file o impostalo su 0 se non trovato
-            # DE: Extrahiere den aktuellen Zähler aus der Datei oder setze ihn auf 0, wenn nicht gefunden
-            # FR: Extraire le compteur actuel du fichier ou le définir à 0 s'il n'est pas trouvé
             COMMIT_COUNTER=$(grep -oP "\d+(?=${COMMIT_SONG})" "$COMMIT_FILE" || echo 0)
-
-            # EN: Increment the counter
-            # ES: Incrementar el contador
-            # IT: Incrementa il contatore
-            # DE: Inkrementiere den Zähler
-            # FR: Incrémenter le compteur
             COMMIT_COUNTER=$((COMMIT_COUNTER + 1))
-
-            # EN: Write updated content to the file
-            # ES: Escribir el contenido actualizado en el archivo
-            # IT: Scrivi il contenuto aggiornato nel file
-            # DE: Schreibe den aktualisierten Inhalt in die Datei
-            # FR: Écrire le contenu mis à jour dans le fichier
             echo "${COMMIT_GREET}${COMMIT_COUNTER}${COMMIT_SONG}" > "$COMMIT_FILE"
-
-            # EN: Configure Git with the commit name
-            # ES: Configurar Git con el nombre del commit
-            # IT: Configura Git con il nome del commit
-            # DE: Konfiguriere Git mit dem Commit-Namen
-            # FR: Configurer Git avec le nom du commit
             git config --global user.name "${COMMIT_NAME}"
-
-            # EN: Configure Git with the commit email
-            # ES: Configurar Git con el correo electrónico del commit
-            # IT: Configura Git con l'email del commit
-            # DE: Konfiguriere Git mit der Commit-E-Mail
-            # FR: Configurer Git avec l'email du commit
             git config --global user.email "${COMMIT_EMAIL}"
-
-            # EN: Add the file to the staging area
-            # ES: Agregar el archivo al área de preparación
-            # IT: Aggiungi il file all'area di staging
-            # DE: Füge die Datei zur Staging-Area hinzu
-            # FR: Ajouter le fichier à la zone de staging
             git add "$COMMIT_FILE"
-
-            # EN: Commit the changes with a custom message
-            # ES: Hacer commit de los cambios con un mensaje personalizado
-            # IT: Effettua il commit delle modifiche con un messaggio personalizzato
-            # DE: Committe die Änderungen mit einer benutzerdefinierten Nachricht
-            # FR: Commitez les modifications avec un message personnalisé
             git commit -m ":octocat: Bounty Updated: ${COMMIT_COUNTER}"
-
-            # EN: Push the commit to the main branch
-            # ES: Empujar el commit a la rama principal
-            # IT: Pusha il commit alla branch principale
-            # DE: Pushe den Commit auf die Hauptbranch
-            # FR: Pousser le commit vers la branche principale
             git push origin main
         env:
             # EN: Use the GitHub Actions token for authentication
